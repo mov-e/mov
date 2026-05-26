@@ -1,90 +1,680 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LiveCams | Fucking Community!</title>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="LiveCams | Join Now!">
-    <meta property="og:description" content="Join LiveCams community and explore exciting live streaming content.">
-    <meta property="og:url" content="https://mov-e.github.io/mov/">
-    <meta property="og:image" content="https://mov-e.github.io/data/post4.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="LiveCams">
-    <meta property="og:locale" content="en_US">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
-    <link href="style.css" rel="stylesheet">
-    <link href="https://mov-e.github.io/data/image7.jpg" rel="shortcut icon">
-  </head>
-  <body>
-<header>
-  <div class="overlay"></div>
-  <video id="background-video" class="video-background" playsinline autoplay muted loop>
-    <source id="video-source" type="video/mp4">
-</video>
-  <div class="container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
-      <div class="w-100 text-white">
-        <div class="">
-        <h1 style="color:#f8f9fa;"><span id=""><strong> Live Cams </strong></span></h1>
-        <div class="stars">
-		<i class="fas fa-star"></i>
-		<i class="fas fa-star"></i>
-		<i class="fas fa-star"></i>
-		<i class="fas fa-star"></i>
-		<i class="fas fa-star"></i>
-		<span>(𝟒.𝟗)</span>
-		</div>
-       <hr style="margin:3px;padding:3px 3px;border:0;border-bottom:0px dashed #ccc">
-		<script>
-          const videoSources = [
-            'https://mov-e.github.io/data/id1.mp4',
-        	'https://mov-e.github.io/data/id2.mp4',
-            'https://mov-e.github.io/data/id3.mp4',
-            'https://mov-e.github.io/data/id4.mp4'
-          ];
-  
-          const randomVideo = videoSources[Math.floor(Math.random() * videoSources.length)];
-  
-          const videoElement = document.getElementById('background-video');
-          const sourceElement = document.getElementById('video-source');
-  
-          sourceElement.src = randomVideo;
-  
-          videoElement.load();
-      </script>
-        <p style="color: #f8f9fa;" class="lead mb-0"><strong> Exclusive & Real </strong></p>
-            <a href="https://cgfajfh.cliksm.com/s/a17955507be61?subsource=OMBAK" class="btn btn-danger btn-lg mt-5 win"> Join On Cams </a>
-        </p>
-        <p style="color: #f8f9fa;" class="lead mb-0"><img src="https://thumbsnap.com/i/Epq7KpZE.png" style="width: 35px;"><strong>𝑽𝒆𝒓𝒊𝒇𝒊𝒆𝒅 𝑨𝒏𝒅 𝑻𝒓𝒖𝒔𝒕𝒆𝒅 𝑺𝒊𝒕𝒆</strong></p>
-        <hr style="margin:10px;padding:10px 10px;border:0;border-bottom:0px dashed #ccc">
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiveCams | Private Live & Real Connections</title>
+
+  <meta name="description" content="Discover private live experiences, verified profiles, and real-time connections on LiveCams Premium.">
+  <meta property="og:title" content="LiveCams | Private Live">
+  <meta property="og:description" content="Verified live experiences with real connections.">
+  <meta property="og:url" content="https://livecamslove.pages.dev/">
+  <meta property="og:image" content="https://mov-e.github.io/data/live2.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="LiveCams">
+  <meta property="og:locale" content="en_US">
+
+  <link rel="icon" type="image/jpeg" href="https://mov-e.github.io/data/image7.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Montserrat',sans-serif;
+    }
+
+    body{
+      background:#000;
+      color:#fff;
+      overflow-x:hidden;
+      overflow-y:auto;
+      user-select:none;
+      -webkit-user-select:none;
+    }
+
+    .hero{
+      position:relative;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      overflow:hidden;
+    }
+
+    #bg-video{
+      position:absolute;
+      top:50%;
+      left:50%;
+      width:100%;
+      height:100%;
+      transform:translate(-50%,-50%);
+      object-fit:cover;
+      object-position:center center;
+      z-index:-5;
+    }
+
+    @media(max-width:992px){
+      #bg-video{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:center top;
+      }
+    }
+
+h1{
+  font-size:clamp(3rem,8vw,7rem);
+  line-height:1.08;
+  font-weight:900;
+  font-style:normal;
+  letter-spacing:-1px;
+
+  color:#ffffff;
+
+  padding-right:.08em;
+
+  text-shadow:
+    0 3px 0 rgba(255,255,255,.08),
+    0 6px 18px rgba(0,0,0,.38),
+    0 10px 28px rgba(0,0,0,.24);
+
+  transform:none;
+}
+
+h1 .red{
+  background:linear-gradient(
+    180deg,
+    #ff5a7f 0%,
+    #ff2955 35%,
+    #ff1744 68%,
+    #d9002f 100%
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  color:transparent;
+
+  text-shadow:none;
+}
+
+    .rating{
+      margin-top:10px;
+      font-size:2rem;
+      color:#FFD700;
+      letter-spacing:4px;
+    }
+
+    .rating span{
+      color:#fff;
+      font-size:1.6rem;
+      margin-left:8px;
+    }
+
+    .subtitle{
+      margin-top:12px;
+      font-size:clamp(.95rem,2vw,1.8rem);
+      text-shadow:0 2px 10px rgba(0,0,0,.35);
+    }
+
+    .subtitle span{
+      color:#ffd1dc;
+    }
+
+    .divider{
+  width:170px;
+  height:3px;
+  margin:16px auto 14px;
+  border-radius:50px;
+  background:linear-gradient(to right, transparent, rgba(255,41,85,.95), transparent);
+  position:relative;
+}
+
+.divider::after{
+  content:'';
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:14px;
+  height:14px;
+  background:radial-gradient(circle, #ffffff 0%, #ffffff 22%, #ff2955 23%, #ff2955 100%);
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:0 0 12px rgba(255,41,85,.8);
+}
+
+    .exclusive{
+      font-size:clamp(1.3rem,2.6vw,2.5rem);
+      margin-bottom:18px;
+      font-weight:800;
+    }
+
+    .cta-btn{
+      display:inline-block;
+      padding:18px 46px;
+      font-size:1.2rem;
+      font-weight:800;
+      color:#fff;
+      text-decoration:none;
+      border-radius:18px;
+      background:linear-gradient(180deg,#ff3158,#d9002f);
+      box-shadow:0 12px 30px rgba(255,0,70,.35);
+      animation:pulseMove 1.8s infinite ease-in-out;
+    }
+
+    @keyframes pulseMove{
+      0%{transform:translateX(0);}
+      25%{transform:translateX(4px);}
+      50%{transform:translateX(0);}
+      75%{transform:translateX(4px);}
+      100%{transform:translateX(0);}
+    }
+
+    .cta-btn i{
+      display:inline-block;
+      margin-left:8px;
+      animation:arrowMove 1s infinite;
+    }
+
+    @keyframes arrowMove{
+      0%,100%{transform:translateX(0);}
+      50%{transform:translateX(6px);}
+    }
+
+    .trust{
+      margin-top:12px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-size:.92rem;
+      font-weight:600;
+    }
+
+    .trust i{
+      color:#c000ff;
+    }
+
+    .stats-box{
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:18px;
+      width:84%;
+      max-width:840px;
+      padding:12px 8px;
+      border-radius:16px;
+      background:rgba(0,0,0,.16);
+      backdrop-filter:blur(6px);
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:5px;
+      z-index:20;
+    }
+
+    .stat{
+      text-align:center;
+      padding:3px;
+      border-right:1px solid rgba(255,255,255,.06);
+    }
+
+    .stat:last-child{
+      border-right:none;
+    }
+
+    .stat i{
+      font-size:1.2rem;
+      color:#ff2955;
+      margin-bottom:5px;
+    }
+
+    .stat h2{
+      font-size:1.05rem;
+      font-weight:800;
+      line-height:1.1;
+    }
+
+    .stat p{
+      font-size:.5rem;
+      line-height:1.15;
+    }
+
+    .copyright{
+      position:absolute;
+      bottom:8px;
+      left:50%;
+      transform:translateX(-50%);
+      font-size:clamp(.5rem,.75vw,.8rem);
+      color:rgba(255,255,255,.88);
+      font-weight:400;
+      text-align:center;
+      text-shadow:0 2px 6px rgba(0,0,0,.3);
+      z-index:30;
+      white-space:nowrap;
+      letter-spacing:.2px;
+    }
+
+.single-chat-wrap{
+  position:fixed;
+  right:8px !important;
+  left:auto !important;
+  bottom:40px !important;
+  width:138px;
+  height:196px;
+  z-index:99999;
+  overflow:hidden;
+}
+
+.single-chat{
+  position:absolute;
+  left:0;
+  width:100%;
+  height:92px;
+  background:rgba(0,0,0,.30);
+  backdrop-filter:blur(5px);
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.08);
+  overflow:hidden;
+  display:block;
+
+  opacity:0;
+  transform:translateY(0);
+  filter:blur(0);
+
+  transition:
+    transform 3.8s cubic-bezier(.16,.84,.44,1),
+    opacity 3.8s ease-out,
+    filter 3.8s ease-out;
+}
+
+.single-chat.active{
+  opacity:1;
+  transform:translateY(0);
+  filter:blur(0);
+}
+
+.single-chat.exit{
+  opacity:0 !important;
+  transform:translateY(-170%) !important;
+  filter:blur(8px) !important;
+}
+
+.chat-header{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:5px 7px;
+  background:linear-gradient(180deg,rgba(255,49,88,.88),rgba(217,0,47,.88));
+}
+
+.chat-avatar{
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(255,255,255,.55);
+  flex-shrink:0;
+}
+
+.chat-name{
+  font-size:.52rem;
+  font-weight:800;
+}
+
+.online-dot{
+  display:inline-block;
+  width:7px;
+  height:7px;
+  margin:0 4px 1px 3px;
+  border-radius:50%;
+  background:#00ff59;
+  vertical-align:middle;
+}
+
+.chat-status{
+  font-size:.4rem;
+  color:#ffe3ea;
+}
+
+.chat-body{
+  padding:6px 7px;
+  font-size:.5rem;
+  line-height:1.2;
+}
+
+.chat-btn{
+  display:block;
+  text-align:center;
+  padding:6px;
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  text-decoration:none;
+  font-size:.52rem;
+  font-weight:800;
+}
+
+@media(max-width:992px){
+  h1{font-size:clamp(2.2rem,10vw,3.8rem);}
+  .rating{font-size:1.1rem;}
+  .rating span{font-size:.9rem;}
+  .subtitle{font-size:.82rem;}
+  .exclusive{font-size:1rem;}
+
+  .cta-btn{
+    padding:14px 28px;
+    font-size:.95rem;
+  }
+
+  .trust{font-size:.75rem;}
+
+  .stats-box{
+    width:90%;
+    bottom:55px;
+    padding:10px 6px;
+    border-radius:14px;
+  }
+
+  .stat i{font-size:.95rem;}
+  .stat h2{font-size:.82rem;}
+  .stat p{font-size:.4rem;}
+
+  .copyright{
+    bottom:4px;
+    font-size:.55rem;
+  }
+
+  .single-chat-wrap{
+    width:132px;
+    height:188px;
+    right:6px !important;
+    bottom:30px !important;
+  }
+
+  .single-chat{
+    height:88px;
+  }
+}
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <video autoplay muted playsinline id="bg-video">
+    <source id="video-source" src="" type="video/mp4">
+  </video>
+
+  <h1>Live <span class="red">Cams</span></h1>
+
+  <div class="rating">★★★★★ <span>(4.9)</span></div>
+
+  <div class="subtitle">
+    Real Connections. <span>Live Experiences.</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="exclusive">Exclusive & Real</div>
+
+  <a href="#" class="cta-btn">
+   JOIN NOW <i class="fa-solid fa-angle-right"></i>
+  </a>
+
+  <div class="trust">
+    <i class="fa-solid fa-shield-halved"></i>
+    <span>Verified And Trusted Site</span>
+  </div>
+
+  <div class="stats-box">
+    <div class="stat">
+      <i class="fa-solid fa-users"></i>
+      <h2 id="members-count">10,000+</h2>
+      <p>ACTIVE MEMBERS</p>
     </div>
+
+    <div class="stat">
+      <i class="fa-solid fa-crown"></i>
+      <h2>VIP</h2>
+      <p>PRIVATE ROOM</p>
+    </div>
+
+    <div class="stat">
+      <i class="fa-solid fa-lock"></i>
+      <h2>100%</h2>
+      <p>PRIVATE & SECURE</p>
     </div>
   </div>
-</header>
+
+  <div class="copyright">
+    © 2026 LiveCams. All Rights Reserved.
+  </div>
+</section>
+
+<div class="single-chat-wrap">
+  <div class="single-chat active">
+    <div class="chat-header">
+      <img src="" class="chat-avatar">
+      <div>
+        <div class="chat-name">Yona<span class="online-dot"></span>Online</div>
+        <div class="chat-status">Live now 🔥</div>
+      </div>
+    </div>
+    <div class="chat-body">Exclusive live show just started 👀</div>
+    <a href="#" class="chat-btn">Watch Now</a>
+  </div>
+
+  <div class="single-chat">
+    <div class="chat-header">
+      <img src="" class="chat-avatar">
+      <div>
+        <div class="chat-name">Silvia<span class="online-dot"></span>Online</div>
+        <div class="chat-status">Typing...</div>
+      </div>
+    </div>
+    <div class="chat-body">Hey babe ❤️ Ready to join me live?</div>
+    <a href="#" class="chat-btn">Reply Now</a>
+  </div>
+
+  <div class="single-chat">
+    <div class="chat-header">
+      <img src="" class="chat-avatar">
+      <div>
+        <div class="chat-name">Olivia<span class="online-dot"></span>Online</div>
+        <div class="chat-status">Waiting for you 🔥</div>
+      </div>
+    </div>
+    <div class="chat-body">I’m feeling naughty tonight… come join me 😘</div>
+    <a href="#" class="chat-btn">Join Now</a>
+  </div>
+  
+  <div class="single-chat">
+    <div class="chat-header">
+      <img src="" class="chat-avatar">
+      <div>
+        <div class="chat-name">Loli<span class="online-dot"></span>Online</div>
+        <div class="chat-status">Private room open ❤️</div>
+      </div>
+    </div>
+    <div class="chat-body">I’ve been saving my hottest side just for you 👀</div>
+    <a href="#" class="chat-btn">Enter Now</a>
+  </div>
+
+  <div class="single-chat">
+    <div class="chat-header">
+      <img src="" class="chat-avatar">
+      <div>
+        <div class="chat-name">Anie<span class="online-dot"></span>Online</div>
+        <div class="chat-status">Typing... 💋</div>
+      </div>
+    </div>
+    <div class="chat-body">Come closer babe… I’ve got something special 😍</div>
+    <a href="#" class="chat-btn">Watch Live</a>
+  </div>
+  
+  <div class="single-chat">
+    <div class="chat-header">
+      <img src="" class="chat-avatar">
+      <div>
+        <div class="chat-name">Clara<span class="online-dot"></span>Online</div>
+        <div class="chat-status">Missing you... 😈</div>
+      </div>
+    </div>
+    <div class="chat-body">Don’t keep me waiting… let’s have some fun 🔥</div>
+    <a href="#" class="chat-btn">Open Chat</a>
+  </div>
+
+  <div class="single-chat">
+    <div class="chat-header">
+      <img src="" class="chat-avatar">
+      <div>
+        <div class="chat-name">Maria<span class="online-dot"></span>Online</div>
+        <div class="chat-status">Exclusive for you 💕V</div>
+      </div>
+    </div>
+    <div class="chat-body">I’ve got a private surprise waiting… don’t miss it 😘</div>
+    <a href="#" class="chat-btn">Unlock Now</a>
+  </div>
+</div>
+
+<script>
+
+const videos = [
+        'https://mov-e.github.io/data/id5.mp4',
+        'https://mov-e.github.io/data/id2.mp4',
+        'https://mov-e.github.io/data/id3.mp4',
+        'https://mov-e.github.io/data/id4.mp4'
+          ];
+
+const video = document.getElementById("bg-video");
+const source = document.getElementById("video-source");
+
+const mainHiddenLink = atob("aHR0cHM6Ly9jZ2ZhamZoLmNsaWtzbS5jb20vcy9hMTc5NTU1MDdiZTYxP3N1YnNvdXJjZT1PTUJBSw==");
+const chatHiddenLink = atob("aHR0cHM6Ly9jZ2ZhamZoLmNsaWtzbS5jb20vcy9hMTc5NTU1MDdiZTYxP3N1YnNvdXJjZT1PTUJBSw==");
+
+let currentVideoIndex = Math.floor(Math.random() * videos.length);
+
+function playVideo(index){
+  source.src = videos[index];
+  video.load();
+
+  video.play().catch(() => {});
+}
+
+playVideo(currentVideoIndex);
+
+setInterval(() => {
+
+  currentVideoIndex++;
+
+  if(currentVideoIndex >= videos.length){
+    currentVideoIndex = 0;
+  }
+
+  playVideo(currentVideoIndex);
+
+}, 10000);
+
+const allChats = document.querySelectorAll('.single-chat');
+let currentChatIndex = 0;
+
+allChats.forEach((chat, i) => {
+  chat.classList.remove('active', 'exit');
+
+  if(i === 0){
+    chat.style.display = 'block';
+    chat.style.opacity = '1';
+    chat.style.transform = 'translate3d(0,0,0) scale(1)';
+    chat.style.filter = 'blur(0)';
+    chat.classList.add('active');
+  }else{
+    chat.style.display = 'none';
+  }
+});
+
+function showSingleChat(){
+
+  const currentChat = allChats[currentChatIndex];
+
+  currentChat.style.willChange = 'transform, opacity, filter';
+  currentChat.classList.remove('active');
+  currentChat.classList.add('exit');
+
+  currentChatIndex = (currentChatIndex + 1) % allChats.length;
+  const nextChat = allChats[currentChatIndex];
+
+  setTimeout(() => {
+
+    nextChat.style.display = 'block';
+    nextChat.classList.remove('active', 'exit');
+
+    nextChat.style.transition = 'none';
+    nextChat.style.willChange = 'transform, opacity, filter';
+
+    nextChat.style.opacity = '0';
+    nextChat.style.transform = 'translate3d(0,14px,0) scale(.985)';
+    nextChat.style.filter = 'blur(5px)';
+
+    void nextChat.offsetHeight;
+
+    nextChat.style.transition =
+      'transform 1.1s cubic-bezier(.16,.84,.44,1), opacity 1.1s ease, filter 1.1s ease';
+
+    requestAnimationFrame(() => {
+      nextChat.style.opacity = '1';
+      nextChat.style.transform = 'translate3d(0,0,0) scale(1)';
+      nextChat.style.filter = 'blur(0)';
+      nextChat.classList.add('active');
+    });
+
+  }, 520);
+
+  setTimeout(() => {
+    currentChat.style.display = 'none';
+    currentChat.classList.remove('exit');
+    currentChat.style.willChange = 'auto';
+  }, 3800);
+}
+
+setInterval(showSingleChat, 5000);
+
+let membersCount = 10000;
+const membersElement = document.getElementById("members-count");
+
+setInterval(() => {
+  membersCount += Math.floor(Math.random() * 7) + 3;
+
+  if(Math.random() > 0.85){
+    membersCount += Math.floor(Math.random() * 25) + 10;
+  }
+
+  membersElement.textContent = membersCount.toLocaleString() + "+";
+}, 4000);
+
+const femaleAvatars = Array.from({length:20}, (_,i)=>
+  `https://randomuser.me/api/portraits/women/${i+20}.jpg`
+);
+
+document.querySelectorAll('.chat-avatar').forEach(avatar => {
+  avatar.src = femaleAvatars[Math.floor(Math.random() * femaleAvatars.length)];
+});
+
+document.querySelector('.cta-btn').addEventListener('click', function(e){
+  e.preventDefault();
+  window.location.href = mainHiddenLink;
+});
+
+document.querySelectorAll('.chat-btn').forEach(btn => {
+  btn.addEventListener('click', function(e){
+    e.preventDefault();
+    window.location.href = chatHiddenLink;
+  });
+});
+</script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
